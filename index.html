@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="주민 의견을 듣고 폭염 속 학습 기회를 지키는 10분 의사결정 게임">
+<title>폭염 속 우리 동네 수업</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="game.js"></script>
+</head>
+<body>
+<header class="mast"><div class="mast-inner"><div class="brand"><span class="brand-icon" aria-hidden="true">☀</span><div><div class="brand-title">폭염 속 우리 동네 수업</div><div class="brand-sub">한빛동 주민회의 <span>·</span> 의사결정 시뮬레이션</div></div></div><div class="header-actions"><div class="clock"><span aria-hidden="true">◷</span> <strong id="clock" role="timer">10:00</strong></div><button class="quiet" id="pause" hidden>일시 정지</button></div></div></header>
+<div class="layout">
+<aside class="side"><div class="side-title">회의 순서</div><nav id="steps" aria-label="회의 순서"></nav><div class="side-note"><span class="pin" aria-hidden="true">✦</span><p>한 번의 시간 변경이<br>주민마다 다르게 다가옵니다.</p></div><button id="reset" class="quiet reset" hidden>새 회의 시작</button></aside>
+<main id="game" tabindex="-1"></main>
+<aside class="reference" aria-label="회의 참고 자료"><div class="ref-heading"><span aria-hidden="true">▤</span> 회의 자료</div><div id="refs"></div></aside>
+</div>
+<dialog id="modal"><div class="modal-head"><h2 id="modalTitle"></h2><form method="dialog"><button class="quiet" aria-label="자료 닫기">닫기</button></form></div><div id="modalBody"></div></dialog>
+</body>
+</html>
